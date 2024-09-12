@@ -9,7 +9,7 @@
 **Entering works:**
 1. **Iris Flower Classification**:
    - **Description**: Use the Iris dataset to create a classification model to predict flower appearance based on features such as sepal and petal length and width.
-   - **Technologies**: Scikit-learn, Pandas, Matplotlib
+   - **Technologies**: Scikit-learn, Pandas, Matplotlib, Flask
    - **Status** - BETA
 
 2. **Housing Price Prediction** :
