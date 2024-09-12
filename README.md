@@ -21,7 +21,7 @@
    - **Technologies**: TensorFlow/Keras, Scikit-learn
 
 4. **Sentiment Analysis of Texts**:
-   - **Description**: Постройте модель для определения настроений (положительное, отрицательное, нейтральное) в текстах. Используйте набор данных отзывов о фильмах или продуктах.
+   - **Description**: Build a model to identify sentiment (positive, negative, neutral) in texts. Use a dataset of movie or product reviews.Use transportation data to predict the time until a flight is delayed or a train arrives.
    - **Technologies**: NLTK, Scikit-learn, TensorFlow/Keras
 
 5. **Weather Forecasting**:
