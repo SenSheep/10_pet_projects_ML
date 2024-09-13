@@ -11,43 +11,38 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-# Загрузка набора данных
+# Loading a dataset
 iris = datasets.load_iris()
 
-# Преобразование данных в DataFrame
+# Convert data into a DataFrame
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df['species'] = iris.target
 
-# Назначение названий классов
+# Assigning class names
 df['species'] = df['species'].map({0: 'setosa', 1: 'versicolor', 2: 'virginica'})
 
-# Разделение данных на признаки и целевую переменную
+# Split the data into attributes and a target variable
 X = iris.data
 y = iris.target
 
-# Разделение на обучающую и тестовую выборки
+# Split into training and test samples
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# Стандартизация данных
+# Data standardization
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# Инициализация моделей
-models = {
-    'KNN': KNeighborsClassifier(),
-    'Decision Tree': DecisionTreeClassifier(),
-    'Random Forest': RandomForestClassifier()
-}
+# best models
+#  models = {
+#     'KNN': KNeighborsClassifier(),
+#     'Decision Tree': DecisionTreeClassifier(),
+#     'Random Forest': RandomForestClassifier()
+# }
 
 best_model = RandomForestClassifier()
 best_model.fit(X_train, y_train)
 y_pred = best_model.predict(X_test)
 
-
-# Сохранение модели
+# Saving the model
 joblib.dump(best_model, 'iris_classifier.pkl')
-
-# Загрузка модели
-loaded_model = joblib.load('iris_classifier.pkl')
-

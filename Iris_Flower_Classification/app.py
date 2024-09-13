@@ -4,15 +4,15 @@ import numpy as np
 
 app = Flask(__name__)
 
-# Загрузка модели
+# Downloading the model
 model = joblib.load('models/iris_classifier.pkl')
 
-# Главная страница
+# Main page
 @app.route('/')
 def index():
     return render_template('index.html')
 
-# Обработка данных формы
+# Processing of form data
 @app.route('/predict', methods=['POST', "GET"])
 
 def predict():
@@ -21,20 +21,20 @@ def predict():
     
     if request.method == "POST":
         try:
-            # Получение данных из формы
+            # Retrieving data from a form
             sepal_length = float(request.form['sepal_length'])
             sepal_width = float(request.form['sepal_width'])
             petal_length = float(request.form['petal_length'])
             petal_width = float(request.form['petal_width'])
 
-            # Проверка диапазона значений
+            # Checking the range of values
             if sepal_length <= 0 or sepal_width <= 0 or petal_length <= 0 or petal_width <= 0:
                 raise ValueError("All measurements must be positive numbers.")
 
-            # Преобразование данных в формат, требуемый моделью
+            # Convert data to the format required by the model
             features = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
 
-            # Предсказание
+            # Prediction
             prediction = model.predict(features)
             iris_species = ['setosa', 'versicolor', 'virginica']
             result = iris_species[prediction[0]]
@@ -42,11 +42,11 @@ def predict():
             return render_template('result.html', result=result)
 
         except ValueError as e:
-            # Обработка ошибки ввода и перенаправление обратно на главную страницу с сообщением об ошибке
+            # Handling input error and redirecting back to the main page with an error message
             error_message = str(e)
             return render_template('index.html', error=error_message)
         except Exception as e:
-            # Обработка других ошибок
+            # Handling other errors
             error_message = "An unexpected error occurred: " + str(e)
             return render_template('index.html', error=error_message)
 
