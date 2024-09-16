@@ -12,7 +12,7 @@ X_test = hpptest
 model = LinearRegression()
 model.fit(X_train, y_train)
 
-y_pred = model.predict (X_test)
+y_pred = model.predict(X_test)
 
 hpptest['SalePrice'] = y_pred
 print(hpptest.head())
