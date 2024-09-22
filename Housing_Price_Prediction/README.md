@@ -1,5 +1,5 @@
-Competition by Kaggle
-House Prices - Advanced Regression Techniques
+Competition by Kaggle  
+House Prices - Advanced Regression Techniques:  
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 
 ### Project Description: Housing Price Prediction
