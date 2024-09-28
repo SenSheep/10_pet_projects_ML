@@ -20,7 +20,7 @@
 3. **Handwritten Digit Recognition**:
    - **Description**: Build a model that recognizes handwritten digits using the MNIST dataset. This is a good project to start working with neural networks.
    - **Technologies**: TensorFlow/Keras, Scikit-learn
-   - **Status** - None
+   - **Status** - BETA
 
 4. **Sentiment Analysis of Texts**:
    - **Description**: Build a model to identify sentiment (positive, negative, neutral) in texts. Use a dataset of movie or product reviews.Use transportation data to predict the time until a flight is delayed or a train arrives.
