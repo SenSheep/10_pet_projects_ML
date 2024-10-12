@@ -2,6 +2,7 @@ Competition by Kaggle
 House Prices - Advanced Regression Techniques:  
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 
+Score: 0.14794
 ### Project Description: Housing Price Prediction
 
 **Objective:**  
@@ -34,4 +35,4 @@ Predict housing prices based on various features of houses using the Housing Pri
    - Generate a CSV file with two columns: `Id` and `SalePrice`, where `SalePrice` contains the predicted housing prices for the test data.
 
 **Tools and Libraries:**
-- Python, Pandas, Scikit-learn
+- Python, Pandas, Scikit-learn, TensorFlow Dedicated Forest

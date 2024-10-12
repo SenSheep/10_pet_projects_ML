@@ -15,7 +15,7 @@
 2. **Housing Price Prediction** :
    - **Description**: Use a set of house price data, such as data on homes in Boston or California, to build a regression model to predict prices based on property characteristics.
    - **Technologies**: Scikit-learn, Pandas, Seaborn
-   - **Status** - BETA | Improving accuracy
+   - **Status** - OMEGA
 
 3. **Handwritten Digit Recognition**:
    - **Description**: Build a model that recognizes handwritten digits using the MNIST dataset. This is a good project to start working with neural networks.
