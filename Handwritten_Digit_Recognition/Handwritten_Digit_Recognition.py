@@ -25,6 +25,7 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print(f'Точность на тестовых данных: {test_acc}')
 
 predictions = model.predict(test_images)
+predictions.to_csv('/', index=False)
 
 # Визуализация первых 5 изображений и их предсказаний
 for i in range(len(test_images)):

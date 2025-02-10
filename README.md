@@ -20,7 +20,7 @@
 3. **Handwritten Digit Recognition**:
    - **Description**: Build a model that recognizes handwritten digits using the MNIST dataset. This is a good project to start working with neural networks.
    - **Technologies**: TensorFlow/Keras, Scikit-learn
-   - **Status** - BETA
+   - **Status** - OMEGA
 
 4. **Sentiment Analysis of Texts**:
    - **Description**: Build a model to identify sentiment (positive, negative, neutral) in texts. Use a dataset of movie or product reviews.Use transportation data to predict the time until a flight is delayed or a train arrives.
@@ -32,7 +32,7 @@
 
 6. **Recommendation System**:
    - **Description**: Build a simple recommendation system that suggests products or movies based on user preferences.
-   - **Technologies**: Scikit-learn, Surprise библиотека, Pandas
+   - **Technologies**: Scikit-learn, Surprise library, Pandas
 
 7. **Customer Segmentation**:
    - **Description**: Use clustering algorithms such as K-means to group customers based on their buying behavior or other characteristics.
@@ -44,7 +44,7 @@
 
 9. **Anomaly Detection**:
    - **Description**: Build a model to detect anomalies in the data. This can be useful for detecting fraudulent transactions or hardware faults.
-   - **Technologies**: Scikit-learn, PyOD библиотека
+   - **Technologies**: Scikit-learn, PyOD library
 
 10. **Transportation Delay Prediction**:
     - **Description**: Use transportation data to predict the time until a flight is delayed or a train arrives. 
